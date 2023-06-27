@@ -480,6 +480,11 @@ transition: all 0.2s;
 
 @media screen  and (max-width:767px) {
    
+   .contetnS
+   {
+    top: -5px !important;
+   left: 220px !important;
+   }
    
    .cajaWD,.game
    {
