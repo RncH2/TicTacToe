@@ -16,7 +16,7 @@ btnCarga.addEventListener("click", (e) => {
   tablaPoint.style.display="none";
   seccWiner.style.display = "none";
   seccPlayerSelect.style.display = "block";
- 
+ menu.style.display="none";
   contentMenu.style.display="none";
 menuDes.style.display="none";
 rP=p;
