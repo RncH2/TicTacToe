@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+:root
+{
+--display-beafbody:none
+}
+body {
+    
+    min-height: 100vh;
+    background: url(2.png);
+    background-size: cover;
+    display: flex;
+    backdrop-filter: saturate(2);
+    background-size: cover;
+position: relative;
+
+}
+
+
+
+
+section {
+    margin: auto;
+    display: block;
+}
+.Reportesbug
+{
+    display: inline-block;
+    margin-bottom: 10PX;
+   
+  color: black;
+    text-decoration: none;
+    animation-name: pulseAnimation;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.Reportesbug:hover
+{
+    cursor: pointer;
+    background-color: #4ef2f5;
+    text-shadow: 1px 1px 15px #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+@keyframes pulseAnimation {
+    100%
+    {
+       transform: translateY(5px);
+    }
+}
+.cajaWD{
+    display: none;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    
+    margin: 0 auto;
+    
+    
+    
+}
+.Point{
+    
+    
+    display: flex;
+   
+     justify-content: center;
+    
+    margin-bottom: 50px;
+    
+}
+.Point #victoria::before{
+   content: "V";
+  
+}
+.Point #derrota::before{
+    content: "D";
+    
+ }
+.Point #tabla::before{
+    content: "T";
+   
+ }
+
+.Point h2{
+    
+    font-size: 45px;
+    
+    background:linear-gradient(to right,#4ef2f5 55%,#ed668f 45%);
+    backdrop-filter: blur(15px);
+    color:black;
+    position: relative;
+    
+   -webkit-background-clip: text;
+   -webkit-text-fill-color:transparent;
+   -webkit-text-stroke-width: 0.5px;
+  
+    
+    padding:0 30px;
+}
+
+.playerSelect {
+    display: block;
+    
+}
+
+.playerSelect .content {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 5px black;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    backdrop-filter: blur(15px);
+    text-shadow: 0px 0px 1px black;
+
+
+}
+
+
+
+.Menu {
+   box-shadow: 1px 5px 15px black;
+   padding: 0 15px;
+   position: fixed;
+   width: 100%;
+   background:transparent;
+   backdrop-filter: blur(15px);
+   background: black;
+  z-index: 100;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   list-style: none;
+}.Menu .Options{
+    cursor: pointer;
+    font-size: 22px;
+    
+}
+
+.contentMenu{
+    display: none;
+    
+}
+.contentMenu #select{
+    cursor: pointer;
+    
+}
+.contetnS{
+    
+    box-shadow: 5px 5px 15px black;
+    left:214px !important;
+    top: 0px !important;
+    background-color: black;
+    height: 50px;
+    position: absolute;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+}
+.carga{
+    color: #ed668f !important;
+}
+.contentMenu ul
+{
+    
+    box-shadow: 5px 5px 15px black;
+   position: absolute;
+    left: 0;
+    top: 50px;
+    background:black;
+    font-size: 20px;
+}
+.contentMenu li{
+    
+    padding:5px 15px;
+   
+}
+.Menu li:hover
+{
+    background-color: #4ef2f5 !important;
+    text-shadow: 1px 1px 15px #fff !important;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.Menu li
+{
+    background-color: #ed668f;
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
+.Menu .contentMenu li:hover{
+    cursor: pointer;
+    background-color: #4ef2f5 !important;
+    text-shadow: 1px 1px 15px #fff !important;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.content h1,
+h3,
+button {
+    margin: 20px;
+}
+
+.playerSelect span,
+.content-turno span,
+.winner span {
+    color: #4ef2f5;
+}
+
+.playerSelect .content,
+button,
+.winner span {
+    color: #ed668f;
+}
+
+.content h1 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+    font-size: 40px;
+
+
+}
+
+.content h3 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+button {
+    height: 45px;
+    width: 95px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border: none;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-radius: 10px;
+    position: relative;
+    transition: all .2s;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+    box-shadow: 2px 2px 5px 0px black;
+
+
+
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    border: none;
+    box-shadow: 2px 2px 3px 1px rgba(103, 101, 101, 0.5) inset;
+    text-shadow: 0px 0px 0px;
+}
+
+.game {
+    display: none;
+    
+}
+
+.game .content-turno {
+
+    background: rgba(250, 240, 240, 0.5);
+    border-radius: 10px;
+    text-shadow: 0px 0px 1px black;
+    position: relative;
+    backdrop-filter: blur(15px);
+    display: flex;
+    box-shadow: 2px 2px 3px 1px rgba(103, 101, 101, 0.5) inset;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 1/4;
+    margin-bottom: 5px;
+
+
+
+
+}
+
+.game .content-turno h1 {
+    z-index: 10;
+    color: #ed668f;
+}
+.grid-content span{
+    cursor: pointer;
+}
+.game .content-turno::before {
+    content: " ";
+    position: absolute;
+    width: 49%;
+    height: 96%;
+    background: var(--before-colorB);
+    right: var(--before-rigth);
+    left: var(--before-left);
+    transform: translateX(var(--before-translateX));
+    border-radius: 10px;
+    border-top: 1px solid#fff;
+    border-left: 1px solid #fff;
+    box-shadow: 1px 1px 2px 0px black;
+    transition: all .5s;
+
+}
+
+
+
+.game .grid-content {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 264px;
+    height: 330px;
+
+
+
+}
+
+
+.grid-content .casilla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    text-transform: uppercase;
+    margin: 3px;
+    font-size: 30px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 1px 1px 2px 0px black;
+    text-shadow: 0px 0px 2px black;
+    transition: all .2s;
+    color: transparent;
+}
+
+
+
+.winner {
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 5px black;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    text-shadow: 0px 0px 1px black;
+    height: 264px;
+    width: 330px;
+
+}
+
+.winner .vdt {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 0, 0, 1px black;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+   
+}
+
+.winner .h12vdt {
+    margin-top: 15px;
+    font-size: 15px;
+
+}
+
+
+
+.winner button {
+    margin-top: 20px;
+    margin-bottom: 0;
+
+}
+
+.winner .continuar
+{
+ color: #4ef2f5;
+}
+
+
+
+
+.clickCasilla {
+    background: rgba(255, 255, 255, 0.5) !important;
+    font-size: 27px !important;
+    border: none !important;
+    box-shadow: 2px 2px 3px 1px rgba(103, 101, 101, 0.5) inset !important;
+    text-shadow: 0px 0px 0px !important;
+}
+
+#r1:checked ~.lr1
+{
+    background: #fff;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow:1px 1px 5px #03eeff;
+animation-name: s;
+   animation-duration: 0.5s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+
+transition: all 0.2s;
+
+}
+
+.contetnS label{
+    color: #ed668f;
+    text-shadow: 1px 1px 3px black;
+    position: absolute;
+    font-size: 20px;
+    z-index: 1000;
+}
+.contetnS label:hover{
+    cursor: pointer;
+    background-color: #4ef2f5;
+    text-shadow: 1px 1px 15px #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.lr2{
+    right: 10px;
+    
+}
+.lr1{
+    left: 10px;
+}
+#r2:checked ~.lr2
+{
+    
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow:1px 1px 5px #03eeff;
+   animation-name: s;
+   animation-duration: 0.5s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   transition: all 0.2s;
+}
+
+@keyframes s
+{
+0%
+{
+   font-size: 19px;
+
+}
+100%
+{
+    font-size: 22px;
+}
+
+}
+
+
+@media screen  and (max-width:767px) {
+   
+   
+   .cajaWD,.game
+   {
+    overflow: hidden;
+    
+   }
+   .cajaWD
+   {
+   height: min-content;
+    
+   }
+   
+    body
+    {
+        background: black;
+    }
+}

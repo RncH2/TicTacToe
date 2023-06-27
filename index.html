@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="Menu"> 
+        
+        <li class="Options"><i class="fa-solid fa-gear" style="color: #f2f2f2;"></i></li>
+        <div class="contentMenu">
+            <ul>
+                <li id="select">Select starting player</li>
+                  
+                
+                <ul class="contetnS" >
+                    <input id=r2 type="radio" name="selectI" hidden>
+                    <label class="lr2" for="r2">Bots</label>
+                    <input id=r1 type="radio" name="selectI" checked="true"hidden >
+                    <label class="lr1" for="r1" >Player</label>
+                </ul>
+                    <ul class="contetnS">
+                        <input id=r2 type="radio" name="selectI" hidden>
+                        <label class="lr2" for="r2">Bots</label>
+                        <input id=r1 type="radio" name="selectI" checked="true"hidden >
+                        <label class="lr1" for="r1" >Player</label>
+                    </ul>
+                
+                <li id="selectDificul">Select difficulty</li>
+               
+                 
+            </ul>
+        </div>
+       
+        
+            
+       
+    </section>
+        
+      
+    
+    
+    <div class="cajaWD">
+        <div class="Point">
+
+            <h2 id="victoria">.0</h2>
+            <h2 id="tabla">.0</h2>
+            <h2 id="derrota">.0</h2>
+
+
+        </div>
+    </div>
+
+    <section class="playerSelect">
+
+        <div class="content">
+            
+            <h1>Tic <span>Tac</span> Toe</h1>
+            <h3>Make your <span>favorite selection</span></h3>
+            <button class="btnPlayer" id="X">Player (X)</button>
+            <button class="btnPlayer" id="O"><span>Player (O)</span> </button>
+        </div>
+
+    </section>
+
+
+
+    <section class="game">
+
+        <div class="grid-content">
+            <div class="content-turno">
+                <h1>X Turn</h1>
+                <h1><span>O Turn</span></h1>
+
+            </div>
+            <span class="casilla"></span>
+            <span class="casilla"></span>
+            <span class="casilla"></span>
+            <span class="casilla"></span>
+            <span class="casilla"></span>
+            <span class="casilla"></span>
+            <span class="casilla"></span>
+            <span class="casilla"></span>
+            <span class="casilla"></span>
+        </div>
+    </section>
+    <section class="winner">
+        <h1 class="vdt">ghjjgasdsadsadsads</h1>
+
+
+        <h1 class="h12vdt"></h1>
+        <div><button class="carga">Restart</button>
+            <button class="continuar">Try Again</button>
+        </div>
+
+
+
+
+
+    </section>
+    
+    
+    
+    <script src="playerAndBot.js"></script>
+    <script src="selectPlayer.js"></script>
+    <script src="turnos.js"></script>
+    <script src="efectoCasilla.js"></script>
+    <script src="winnerD.js"></script>
+    <script src="seccWiner.js"></script>
+    <script src="botGame.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="options.js"></script>
+    <script src="https://kit.fontawesome.com/ef59467b93.js" crossorigin="anonymous"></script>
+   
+    <script>
+       
+        if (window.matchMedia("(max-width: 767px)").matches) {
+           
+            VanillaTilt.init(document.querySelector(".game"), {
+                max: 0,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.2
+            });
+    
+            VanillaTilt.init(document.querySelector(".content"), {
+                max: 0,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.2
+            });
+    
+            VanillaTilt.init(document.querySelector(".winner"), {
+                max: 0,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.2
+            });
+    
+            VanillaTilt.init(document.querySelector(".Point"), {
+                max: 0,
+                speed: 400,
+                glare: false
+            });
+        } else {
+           
+            VanillaTilt.init(document.querySelector(".game"), {
+                max: 10,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.2
+            });
+    
+            VanillaTilt.init(document.querySelector(".content"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.2
+            });
+    
+            VanillaTilt.init(document.querySelector(".winner"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.2
+            });
+    
+            VanillaTilt.init(document.querySelector(".Point"), {
+                max: 25,
+                speed: 400,
+                glare: false
+            });
+        }
+    </script>
+
+
+
+</body>
+
+</html>
