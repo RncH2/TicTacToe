@@ -14,10 +14,10 @@ body {
     
     min-height: 100vh;
     background: black;
-    background-size: cover;
+   
     display: flex;
-    backdrop-filter: saturate(2);
-    background-size: cover;
+    
+
 position: relative;
 
 }
