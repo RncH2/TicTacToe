@@ -13,7 +13,7 @@
 body {
     
     min-height: 100vh;
-    background: url(2.png);
+    background: black;
     background-size: cover;
     display: flex;
     backdrop-filter: saturate(2);
@@ -497,8 +497,5 @@ transition: all 0.2s;
     
    }
    
-    body
-    {
-        background: black;
-    }
+
 }
